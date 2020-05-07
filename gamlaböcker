@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="description" content="Begagnade kursb&ouml;cker">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Java, Spanska, Webbdesign, Datavetenskap">
+    <title>Libros usados</title>
+    <meta name="author" content="Antonio Rueda">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+		body {
+	margin: 0;
+	padding: 20px;
+	background-color: #999;
+        background-image: url("bilder/bild11.jpeg");
+	color: #fff;
+	font: 87.5%/1.4 HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Georgia","Times New Roman",serif;
+        
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 328.571%;
+    margin-bottom: 0.2em;
+}
+
+h1.title {
+	text-align: center;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        
+}
+
+h2 {
+    font-size: 250%;
+    margin-bottom: 0.2em;
+    text-align:center;
+}
+
+h3 {
+    font-size: 150%;
+    margin-bottom: 0.2em;
+}
+
+p {
+	margin:0;
+	padding: 0 0 1em 0;
+}
+
+.box {
+    background-color: #fff;
+    padding: 10px 10px 1px;
+    color: #444;
+    box-sizing:border-box;
+        
+}
+
+
+.wrapper {	 
+  width: 90%;
+  margin: 0 auto 0 auto;
+  display:grid;
+  grid-template-columns: 1fr [gutter] repeat(16, [col] 4.25fr [gutter] 1fr );
+  grid-template-rows: repeat(9, [row] auto [gutter] 20px );
+}
+
+
+
+.header { 
+  grid-column: col / span gutter 16; 
+        background-image: url("bilder/bild11.jpeg");
+  grid-row: row / span 1;
+} 
+
+.side1 { 
+  grid-column: col / span gutter 4; 
+        background-image: url("bilder/bild11.jpeg");
+  grid-row: row 2 / span 1;
+  height: 100%;
+}
+
+.content { 
+  grid-column: col 5 / span gutter 8; 
+        background-image: url("bilder/bild11.jpeg");
+  grid-row: row 2 / span 1;
+  height: 100%;
+}
+
+.side2 { 
+  grid-column: col 13 / span gutter 4; 
+        background-image: url("bilder/bild11.jpeg");
+  grid-row: row 2 / span 1;
+  height: 100%;
+}
+
+.footer { 
+  grid-column: col / span gutter 16; 
+        background-image: url("bilder/bild11.jpeg");
+  grid-row: row 3 / span 1;
+}
+</style> </head>
+  <body>
+    <h1 class="title">Webbsida med CSS Grid</h1>
+    <div class="wrapper">
+      <header class="header box">
+        <h2>Begagnade b&ouml;cker</h2>
+      </header>
+      <aside class="side1 box">
+        <div style="text-align: center;">&nbsp; <img style="width: 167px; height: 208px;"
+            title="lazlo" alt="lazlo" src="bilder/bild1.jpeg">&nbsp;</div>
+        <div style="text-align: center;"><img style="width: 167px; height: 208px;"
+            alt="bild2" src="bilder/bild2.jpeg"><br>
+        </div>
+        <div style="text-align: center;"><img style="width: 167px; height: 208px;"
+            alt="java" src="bilder/bild3.jpeg"><br>
+        </div>
+        <br>
+        <p><br>
+        </p>
+        <p><br>
+        </p>
+        <p><br>
+        </p>
+      </aside>
+      <article class="content box">
+        <p>Hej, jag heter Antonio Rueda. V&auml;lkommen till
+          min sida p&aring; <a title="Mina begagnade kursb&ouml;cker"
+            href="https://www.studentapan.se/user/2506">Studentapan</a>.
+        </p>
+        <p>H&auml;r kan du k&ouml;pa begagnad kurslitteratur
+          precis lika snabbt, enkelt och riskfritt som att
+          k&ouml;pa nytt. Dessutom &auml;r det b&auml;ttre
+          f&ouml;r milj&ouml;n. </p>
+        <p></p>
+        <p>? Spara upp&aring;t 80% j&auml;mf&ouml;rt med
+          l&auml;gsta nypris. </p>
+        <br>
+        <p>? Best&auml;ll direkt med s&auml;ker
+          kortbetalning utan kr&aring;nglig mejlkontakt.</p>
+        <br>
+        <p>? Full trygghet f&ouml;r dig som k&ouml;pare med
+          skydd mot bedr&auml;geri.</p>
+      </article>
+      <aside class="side2 box">
+        <div style="text-align: center;"><img style="width: 167px; height: 208px;"
+            alt="java" <img="" src="bilder/bild8.jpeg"><br>
+        </div>
+        <div style="text-align: center;"><img style="width: 167px; height: 208px;"
+            alt="java" <img="" src="bilder/bild7.jpeg"><br>
+        </div>
+        <div style="text-align: center;"><img style="width: 167px; height: 208px;"
+            alt="java" <img="" src="bilder/bild9.jpeg"><br>
+        </div>
+        <p><br>
+        </p>
+      </aside>
+      <footer class="footer box">
+        <p>ARV-04/05/20.</p>
+      </footer>
+    </div>
+  </body>
+</html>
